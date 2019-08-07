@@ -1,5 +1,5 @@
 {
-  "name": "chuck-norris-js",
+  "name": "chuck-norris",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,5 +27,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwenamokgohlwa/chuck-norris-js.git"
+  },
+  "author": "Kwena Mokgohlwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwenamokgohlwa/chuck-norris-js/issues"
+  },
+  "homepage": "https://github.com/kwenamokgohlwa/chuck-norris-js#readme"
 }
