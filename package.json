@@ -1,9 +1,13 @@
 {
-  "name": "chuck-norris",
+  "name": "chuck-norris-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
     "react": "^16.8.6",
+    "react-apollo": "^3.0.0",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
@@ -28,17 +32,17 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Fullstack JS Chuck Norris App built with React, Redux, GraphQL & Node - Client",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kwenamokgohlwa/chuck-norris-js.git"
+    "url": "git+https://github.com/kwenamokgohlwa/chuck-norris-client.git"
   },
   "author": "Kwena Mokgohlwa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kwenamokgohlwa/chuck-norris-js/issues"
+    "url": "https://github.com/kwenamokgohlwa/chuck-norris-client/issues"
   },
-  "homepage": "https://github.com/kwenamokgohlwa/chuck-norris-js#readme"
+  "homepage": "https://github.com/kwenamokgohlwa/chuck-norris-client#readme"
 }

@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ApolloClient from "apollo-boost";
+
+const client = new ApolloClient({
+  uri: "https://chuck-norris-server-ir20o8vo3.now.sh/api"
+});
 
 function App() {
   return (
