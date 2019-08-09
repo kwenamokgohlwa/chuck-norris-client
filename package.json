@@ -12,10 +12,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "build": "react-scripts build --output public",
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && ns build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +35,10 @@
   },
   "description": "Fullstack JS Chuck Norris App built with React, Redux, GraphQL & Node - Client",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "now": "^16.1.1",
+    "now-serve": "^0.5.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwenamokgohlwa/chuck-norris-client.git"
