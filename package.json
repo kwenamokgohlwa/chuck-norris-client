@@ -5,7 +5,10 @@
   "dependencies": {
     "apollo-client": "^2.6.3",
     "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "graphql-tag": "^2.10.1",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-apollo": "^3.0.0",
     "react-dom": "^16.8.6",
@@ -13,7 +16,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "react-scripts start",
+    "start": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn build && now"
@@ -45,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/kwenamokgohlwa/chuck-norris-client/issues"
   },
-  "homepage": "https://chuck-norris-client.kwenam.now.sh/"
+  "homepage": "https://chuck-norris-client.kwenam.now.sh/",
+  "engines": {
+    "node": "11.x"
+  }
 }

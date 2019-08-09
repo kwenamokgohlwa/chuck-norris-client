@@ -1,11 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import { ApolloClient, gql } from "apollo-boost";
-
-// const client = new ApolloClient({
-//   uri: "https://chuck-norris-server-kwena.herokuapp.com/"
-// });
 
 function App() {
   return (
