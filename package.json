@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apollo-boost": "^0.4.3",
-    "graphql": "^14.4.2",
+    "apollo-client": "^2.6.3",
+    "dotenv": "^8.0.0",
     "graphql-tag": "^2.10.1",
     "react": "^16.8.6",
     "react-apollo": "^3.0.0",
@@ -12,11 +12,11 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "build": "react-scripts build --output public",
+    "build": "react-scripts build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && ns build"
+    "deploy": "yarn build && now"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,10 +35,7 @@
   },
   "description": "Fullstack JS Chuck Norris App built with React, Redux, GraphQL & Node - Client",
   "main": "index.js",
-  "devDependencies": {
-    "now": "^16.1.1",
-    "now-serve": "^0.5.1"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwenamokgohlwa/chuck-norris-client.git"

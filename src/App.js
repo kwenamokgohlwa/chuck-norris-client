@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ApolloClient from "apollo-boost";
+// import { ApolloClient, gql } from "apollo-boost";
 
-const client = new ApolloClient({
-  uri: "https://chuck-norris-server-ir20o8vo3.now.sh/api"
-});
+// const client = new ApolloClient({
+//   uri: "https://chuck-norris-server-kwena.herokuapp.com/"
+// });
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo"/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
