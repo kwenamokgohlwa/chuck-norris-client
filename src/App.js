@@ -14,11 +14,10 @@ const GET_CATEGORIES = gql`
 
 const App = () => (
 
-    <div className="jumbotron">
-      <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+    <header className="jumbotron my-4">
         <Query query={GET_CATEGORIES}>
           {({ data, loading, error}) => {
-            if (loading || !data.categories) return <div>Loading ...</div>;
+            if (loading) return <div>Loading ...</div>;
             if (error) return `Error! ${error}`;
 
             return (
@@ -28,8 +27,7 @@ const App = () => (
         </Query>
         <hr className="my-4" />
         <Joke />
-      </div>
-    </div>
+    </header>
 )
 
 export default App;

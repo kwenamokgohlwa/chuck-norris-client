@@ -23,7 +23,7 @@ class RandomJoke extends React.Component {
             if (error) return `Error! ${error}`;
 
             return (
-              <div>
+              <div className="text-center">
                 {data.joke.value}
               </div>
             );

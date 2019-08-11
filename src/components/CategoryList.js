@@ -15,7 +15,7 @@ class CategoryList extends React.Component {
 
   render(){
     return (
-      <div className="col-md-12">
+      <div>
         <h1 className="text-center">Chuck Norris</h1>
         <img src={process.env.PUBLIC_URL + '/chuck-norris-hero.png'} className="rounded mx-auto d-block" alt="Chuck Norris" height="100" width="100" style={{marginBottom: "20px"}}></img>
         <div className="text-center">
