@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Categories from './CategoryList.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
+
+const GET_CATEGORIES = gql`
+  query {
+    categories
+  }
+`;
+
+const App = () => (
+  <div>
+    <Query query={GET_CATEGORIES}>
+      {({ data, loading, error}) => {
+        if (loading || !data.categories) return <div>Loading ...</div>;
+        if (error) return `Error! ${error}`;
+
+        return (
+          <Categories categories={data.categories} />
+        );
+      }}
+    </Query>
+  </div>
+)
 
 export default App;
+
+
+
